@@ -1,4 +1,4 @@
-# gtm-awesome
+# GTM Awesome
 WordPress plugin that allows inserting Google Tag Manager code for entire website or per page basis.
 
 To use the plugin:
