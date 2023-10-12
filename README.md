@@ -5,9 +5,11 @@ To use the plugin:
 
 1. Install and activate the plugin in your WordPress dashboard.
 2. Edit a page in the WordPress admin.
-3. Scroll down to the "Script Awesome Code" section in the page editor to enter the JS code for <head> and <body>.
+3. Scroll down to the "Script Awesome Code" section in the page editor to enter the JS code for *head* and *body* tags.
 4. Publish or update the page.
-5. JS code will be added to the selected page in the <head> and <body> sections.
+5. JS code will be added to the selected page in the *head* and *body* sections.
+
+*Note: You need to wrap JS code with *script* opening/closing tags
 
 You can repeat these steps for different pages to add different JS codes, and you can also see the code status in the page list.
 
