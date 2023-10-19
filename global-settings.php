@@ -14,7 +14,7 @@ function script_awesome_settings_page() {
                         <?php
                         $head_codes = get_option('script_awesome_code_head', []);
                         foreach ($head_codes as $index => $code) {
-                            echo "<textarea name='script_awesome_code_head[]' rows='8' cols='150'>" . esc_textarea($code) . "</textarea><br>"; // Add <br>
+                            echo "<textarea name='script_awesome_code_head[]' rows='8' cols='150'>" . esc_textarea($code) . "</textarea><br>";
                         }
                         ?>
                         <button type="button" class="add-new-code" data-type="head">Add New Code</button>
