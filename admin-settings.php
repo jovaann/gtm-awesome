@@ -1,12 +1,20 @@
 <?php
 // Register plugin settings
 function script_awesome_register_settings() {
-    add_option('script_awesome_code_head', []); // Code for <head>
-    add_option('script_awesome_code_body', []); // Code for <body>
-    register_setting('script-awesome-settings-group', 'script_awesome_code_head');
-    register_setting('script-awesome-settings-group', 'script_awesome_code_body');
+    // Add custom fields for head and body scripts
+    register_post_meta('page', 'script_awesome_code_head', array(
+        'type' => 'array',
+        'single' => true,
+        'show_in_rest' => true,
+    ));
+    
+    register_post_meta('page', 'script_awesome_code_body', array(
+        'type' => 'array',
+        'single' => true,
+        'show_in_rest' => true,
+    ));
 }
-add_action('admin_init', 'script_awesome_register_settings');
+add_action('init', 'script_awesome_register_settings');
 
 // Add a menu item in the admin menu
 function script_awesome_menu() {
